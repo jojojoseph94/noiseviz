@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "build": "webpack --output-path ./public",
     "start": "webpack-dev-server --content-base ./public --output-path ./public --hot"
   },
