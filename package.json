@@ -6,7 +6,7 @@
   "scripts": {
     "heroku-prebuild": "npm install --dev",
     "build": "webpack --output-path ./public",
-    "start": "webpack-dev-server --content-base ./public --output-path ./public --hot"
+    "start": "webpack -p"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,8 @@
     "@babel/preset-react": "^7.7.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "@babel/core": "^7.7.4",
