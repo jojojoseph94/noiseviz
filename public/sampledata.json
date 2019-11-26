@@ -1,0 +1,30 @@
+[
+    {
+        "id": 123,
+        "date": "7/1/2019",
+        "latitude": 37.3352,
+        "longitude": -121.8811,
+        "decibel": 87
+    },
+    {
+        "id": 123,
+        "date": "7/1/2019",
+        "latitude": 40.888,
+        "longitude": -121.5899,
+        "decibel": 87
+    },
+    {
+        "id": 123,
+        "date": "7/1/2019",
+        "latitude": 36.21,
+        "longitude": -120.55,
+        "decibel": 87
+    },
+    {
+        "id": 123,
+        "date": "7/1/2019",
+        "latitude": 38.21,
+        "longitude": -120.22,
+        "decibel": 87
+    }
+]
