@@ -15,9 +15,9 @@ var scatterplot = null;
 function initialize(query=null){
 
   if (query) {
-      var link = 'http://localhost:8000/getdata?' + query;
+      var link = window.location.href + 'getdata?' + query;
   } else {
-      var link = 'http://localhost:8000/getdata';
+      var link = window.location.href + 'getdata';
   }
   console.log("Using url" + link);
   $.ajax({

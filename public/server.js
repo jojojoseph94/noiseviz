@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 const path = require('path');
+const port = process.env.PORT || 8080;
 
 const db = require("./db");
 const collection = "measurements";
@@ -46,12 +47,17 @@ app.get('/getdata',(req,res)=>{
     
 })
 
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'index.html'));
+  });
+
+app.use(express.static(__dirname));
 db.connect((err)=>{
     if(err){
         console.log('unable to connect to db');
         process.exit(1);
     }else {
-        app.listen(8000,()=>{
+        app.listen(port,()=>{
             console.log("Connected to DB. App running on port 8000");
         })
     }

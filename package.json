@@ -6,7 +6,8 @@
   "scripts": {
     "heroku-prebuild": "npm install --dev",
     "build": "webpack --output-path ./public",
-    "start": "webpack -p"
+    "start": "node public/server.js ",
+    "dev": "webpack-dev-server --content-base ./public --output-path ./public --hot" 
   },
   "keywords": [],
   "author": "",
