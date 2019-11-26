@@ -54,6 +54,7 @@ app.get('/', (req, res) => {
 app.use(express.static(__dirname));
 db.connect((err)=>{
     if(err){
+        console.log(err);
         console.log('unable to connect to db');
         process.exit(1);
     }else {
