@@ -1,7 +1,7 @@
 const MongoClient = require("mongodb").MongoClient;
 const dbname = "cmpe273";
 
-const url = "mongodb+srv://user:password1234@cluster0-hrvoe.mongodb.net/cmpe273?retryWrites=true&w=majority";
+const url = "mongodb+srv://user:*****";
 
 const mongoOptions = {useNewUrlParser : true};
 
